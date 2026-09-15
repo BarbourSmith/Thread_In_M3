@@ -2,7 +2,14 @@
 
 # Thread_In_M3
 
-![](/project.svg)
+![](/project.png)
+
+## Inputs
+
+- **Length** (number)
+- **Keep_Out_Length** (number)
+- **Thread_Length** (number)
+
 
 
 
