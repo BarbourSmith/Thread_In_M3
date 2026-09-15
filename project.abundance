@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "Length",
-      "ioValue": 14
+      "ioValue": 25,
+      "currentEquation": "25"
     },
     {
       "name": "Keep_Out_Length",
@@ -15,7 +16,8 @@
     },
     {
       "name": "Thread_Length",
-      "ioValue": 10
+      "ioValue": 10,
+      "currentEquation": "10"
     }
   ],
   "topLevel": true,
@@ -62,7 +64,7 @@
         },
         {
           "name": "Item Name",
-          "ioValue": "14mm M3 Bolt",
+          "ioValue": "25mm M3 Bolt",
           "currentEquation": "New Item"
         },
         {
@@ -79,7 +81,7 @@
         }
       ],
       "BOMitem": {
-        "BOMitemName": "14mm M3 Bolt",
+        "BOMitemName": "25mm M3 Bolt",
         "numberNeeded": 1,
         "costUSD": 0,
         "source": ""
@@ -94,7 +96,7 @@
       "ioValues": [
         {
           "name": "L",
-          "ioValue": 14
+          "ioValue": 25
         }
       ],
       "currentEquation": "L + \"mm M3 Bolt\""
@@ -138,7 +140,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": -14
+          "ioValue": -25
         }
       ]
     },
@@ -170,7 +172,7 @@
               "origin": [
                 0,
                 0,
-                -14
+                -25
               ],
               "xDir": [
                 1,
@@ -197,7 +199,7 @@
               "origin": [
                 0,
                 0,
-                -4
+                -10
               ],
               "xDir": [
                 1,
@@ -259,24 +261,6 @@
       ]
     },
     {
-      "atomType": "Equation",
-      "x": 0.1,
-      "y": 0.3,
-      "uniqueID": "id-216",
-      "name": "-1*(L-T)",
-      "ioValues": [
-        {
-          "name": "L",
-          "ioValue": 14
-        },
-        {
-          "name": "T",
-          "ioValue": 10
-        }
-      ],
-      "currentEquation": "-1*(L-T)"
-    },
-    {
       "atomType": "Move",
       "x": 0.2,
       "y": 0.4,
@@ -296,7 +280,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": -4
+          "ioValue": -10
         }
       ]
     },
@@ -363,13 +347,13 @@
     {
       "atomType": "Equation",
       "x": 0.1,
-      "y": 0.5,
+      "y": 0.3,
       "uniqueID": "id-96",
       "name": "-1*L",
       "ioValues": [
         {
           "name": "L",
-          "ioValue": 14
+          "ioValue": 25
         }
       ],
       "currentEquation": "-1*L"
@@ -410,7 +394,7 @@
         {
           "name": "Shape 3",
           "ioValue": {
-            "geometry": "loft-move-circle-1-0-0-0-move-circle-1.75-0-0-0-{\"origin\":[0,0,-14],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,-4],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--",
+            "geometry": "loft-move-circle-1-0-0-0-move-circle-1.75-0-0-0-{\"origin\":[0,0,-25],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-{\"origin\":[0,0,-10],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -505,11 +489,6 @@
       "ap2ID": "id-103"
     },
     {
-      "ap2Name": "L",
-      "ap1ID": "id-91",
-      "ap2ID": "id-216"
-    },
-    {
       "ap2Name": "geometry",
       "ap1ID": "id-92",
       "ap2ID": "id-93"
@@ -595,24 +574,19 @@
       "ap2ID": "id-207"
     },
     {
-      "ap2Name": "T",
-      "ap1ID": "id-204",
-      "ap2ID": "id-216"
-    },
-    {
       "ap2Name": "height",
       "ap1ID": "id-207",
       "ap2ID": "id-212"
     },
     {
+      "ap2Name": "zDist",
+      "ap1ID": "id-207",
+      "ap2ID": "id-222"
+    },
+    {
       "ap2Name": "Shape 4",
       "ap1ID": "id-212",
       "ap2ID": "id-97"
-    },
-    {
-      "ap2Name": "zDist",
-      "ap1ID": "id-216",
-      "ap2ID": "id-222"
     },
     {
       "ap2Name": "Shape 2",
